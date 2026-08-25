@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5b6cff"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景圆角方形：蓝紫渐变 -->
+  <rect width="256" height="256" rx="48" fill="url(#g)"/>
+
+  <!-- 仓库轮廓 -->
+  <path d="M128 38L38 98v120h76v-52h28v52h76V98L128 38z"
+        stroke="#fff" stroke-width="18" stroke-linejoin="round" fill="none" opacity="0.95"/>
+
+  <!-- 屋顶中脊线 -->
+  <path d="M128 38 L128 86" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- 对账箭头：左仓库 → 右仓库 -->
+  <g transform="translate(128,152)">
+    <!-- 主线 -->
+    <path d="M-48 0 L48 0" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+    <!-- 右箭头 -->
+    <polygon points="48,-14 74,0 48,14" fill="#fff"/>
+    <!-- 左侧回勾（象征 EOP → WMS 双向核对） -->
+    <path d="M-10 -26 Q-30 -46 -10 -66"
+          stroke="url(#accent)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.95"/>
+    <polygon points="-22,-58 -6,-76 6,-58" fill="url(#accent)" opacity="0.95"/>
+  </g>
+
+  <!-- 两个小方块 = EOP / WMS -->
+  <rect x="64" y="182" width="36" height="36" rx="10" fill="#fff" opacity="0.88"/>
+  <rect x="156" y="182" width="36" height="36" rx="10" fill="#fff" opacity="0.52"/>
+
+  <!-- 对账通过的对勾 -->
+  <path d="M72 200 L82 210 L104 188"
+        stroke="#7df9a8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+</svg>

@@ -1,0 +1,30 @@
+# ---- 依赖 ----
+node_modules/
+
+# ---- 构建产物 ----
+dist/
+backend/dist/
+frontend/dist/
+
+# ---- 环境变量（保留 .env.example 模板） ----
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ---- 日志 ----
+*.log
+logs/
+npm-debug.log*
+
+# ---- 项目元数据（WorkBuddy 记忆/配置，不入库） ----
+.workbuddy/
+
+# ---- 系统 / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.njsproj
+*.sln

@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #5b6cff;
+  --color-success: #2bb673;
+  --color-warning: #f5a623;
+  --color-danger: #ef5b6b;
+  --color-info: #6b7a99;
+
+  --glass-bg: rgba(255, 255, 255, 0.16);
+  --glass-bg-strong: rgba(255, 255, 255, 0.28);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+  --glass-radius: 22px;
+  --glass-radius-sm: 14px;
+
+  --text-strong: #1f2330;
+  --text-normal: #3a4156;
+  --text-muted: #8a93a8;
+
+  --sidebar-width: 232px;
+  --sidebar-width-collapsed: 72px;
+}
