@@ -28,3 +28,8 @@ Thumbs.db
 *.suo
 *.njsproj
 *.sln
+
+# ---- 服务器生产配置与运维（绝不提交） ----
+docker-compose.deploy.yml
+backup.sh
+backups/
